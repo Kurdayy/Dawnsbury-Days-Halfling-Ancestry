@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Platform>x64</Platform>
+	  <PlatformTarget>x64</PlatformTarget>
+	  <NoWarn>1998</NoWarn>
+	  <!-- Dawnsbury Days uses many async methods, and you often won't want to make any await calls in them. -->
+	  <WarningsAsErrors>0618</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>E:\SteamLibrary\steamapps\common\Dawnsbury Days\Data\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Dawnsbury Days">
+      <HintPath>E:\SteamLibrary\steamapps\common\Dawnsbury Days\Data\Dawnsbury Days.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>E:\SteamLibrary\steamapps\common\Dawnsbury Days\Data\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
+
